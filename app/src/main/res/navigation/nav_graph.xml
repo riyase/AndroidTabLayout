@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/itemFragment">
+
+    <fragment
+        android:id="@+id/itemFragment"
+        android:name="com.example.navigationcomponenttablet.ItemFragment"
+        android:label="ItemFragment"
+        tools:layout="@layout/fragment_item_list"
+        >
+        <action
+            android:id="@+id/action_itemFragment_to_detailFragment2"
+            app:destination="@id/detailFragment2" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/sportsFragment"
+        android:name="com.example.navigationcomponenttablet.SportsFragment"
+        android:label="fragment_sports"
+        tools:layout="@layout/fragment_sports" >
+        <action
+            android:id="@+id/action_sportsFragment_to_cricketFragment"
+            app:destination="@id/cricketFragment" />
+        <action
+            android:id="@+id/action_sportsFragment_to_soccerFragment"
+            app:destination="@id/soccerFragment2" />
+        <action
+            android:id="@+id/action_sportsFragment_to_volleyBallFragment"
+            app:destination="@id/volleyBallFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/politicsFragment"
+        android:name="com.example.navigationcomponenttablet.PoliticsFragment"
+        android:label="fragment_politics_new"
+        tools:layout="@layout/fragment_politics_new" />
+    <!--<fragment
+        android:id="@+id/entertainmentFragment"
+        android:name="com.example.navigationcomponenttablet.EntertainmentFragment"
+        android:label="fragment_entertainment"
+        tools:layout="@layout/fragment_entertainment" />-->
+    <fragment
+        android:id="@+id/cricketFragment"
+        android:name="com.example.navigationcomponenttablet.CricketFragment"
+        android:label="fragment_cricket"
+        tools:layout="@layout/fragment_cricket" />
+    <fragment
+        android:id="@+id/soccerFragment"
+        android:name="com.example.navigationcomponenttablet.SoccerFragment"
+        android:label="fragment_soccer"
+        tools:layout="@layout/fragment_soccer" />
+    <fragment
+        android:id="@+id/volleyBallFragment"
+        android:name="com.example.navigationcomponenttablet.VolleyBallFragment"
+        android:label="fragment_volley"
+        tools:layout="@layout/fragment_volley" />
+    <fragment
+        android:id="@+id/detailFragment2"
+        android:name="com.example.navigationcomponenttablet.DetailFragment"
+        android:label="fragment_detail2"
+        tools:layout="@layout/fragment_detail2" />
+</navigation>

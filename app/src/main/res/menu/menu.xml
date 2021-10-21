@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/itemFragment"
+        android:icon="@drawable/ic_email_black_24dp"
+        android:title="List" />
+
+    <item
+        android:id="@+id/sportsFragment"
+        android:icon="@drawable/ic_email_black_24dp"
+        android:title="Sports" />
+
+    <item
+        android:id="@+id/politicsFragment"
+        android:icon="@drawable/ic_question_answer_black_24dp"
+        android:title="Politics" />
+
+</menu>
